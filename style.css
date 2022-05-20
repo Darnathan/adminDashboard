@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: block;
+    outline: 1px  solid blue;
+}
+
+.main-container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns:20% 80%;
+    grid-template-rows: 20% 80%;
+}
+/*Sidebar*/
+.logo {
+    margin-top: 2.5rem;
+    margin-left: 2.5rem;
+    font-size:3.4rem;
+    font-family: 'Anton', sans-serif;
+}
+
+
+.navbar-sidebar > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    margin-left: 2.5rem;
+}
+.navbar-sidebar {
+    display: flex;
+    flex-direction: column;
+    
+    background-color: aqua;
+    grid-area: 1/1/3/2;
+}
+/*Header*/
+.header {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 50% 50%;
+    background-color: aquamarine;
+}
+.search-bar{
+    display: flex;
+}
+.search-bar > input {
+    height: 20px;
+    width:600px;
+    border-radius: 17px;
+}
+.buttons-1{
+    justify-self: end;
+}
+.buttons-2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.user-info{
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+.img-info{
+    grid-area: 1/1/3/2;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    background-color: rgb(108, 151, 151);
+}
+.projects{
+    background-color: aliceblue;
+    grid-area: 1/1/3/2;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 30% 30% 30%;
+}
+.content{
+    display: grid;
+}
+
+/*Side bar*/
+
+.main-side-bar{
+    display: grid;
+    
+}
+.announcements{
+    display: grid;
+}
+.trending-projects{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+.profile-pic{
+    grid-area: 1/1/3/2;
+}
